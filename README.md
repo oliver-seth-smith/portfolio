@@ -80,7 +80,7 @@ local site asset.
 - `OpsReady` links to its public repository.
 - `GE Ledger` is hosted at `/osrs-market-watch/`, links to its public repository, plots on-demand
   average high and low histories across standardized 1D, 1W, 1M, 3M, and 1Y ranges, and exposes
-  published four-hour buy limits. Its verified suite runs 84 automated tests across nine test
+  published four-hour buy limits. Its verified suite runs 85 automated tests across nine test
   files without presenting observed market-wide volume as guaranteed player profit.
 - `Deathle` links to the live daily game and describes its checked-in Wikipedia data pipeline,
   deterministic puzzle selection, and accessible reordering controls.
