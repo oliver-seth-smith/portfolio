@@ -1213,26 +1213,109 @@ html:not(.js-enabled) .filter-row {
   text-align: right;
 }
 
-.market-equation {
+.market-history {
+  padding: 11px 12px 9px;
+  border: 1px solid rgba(226, 184, 92, 0.2);
+  border-radius: 9px;
+  background: rgba(7, 13, 9, 0.5);
+}
+
+.market-history-head,
+.market-history-legend {
   display: flex;
-  padding: 10px 12px;
   align-items: center;
   justify-content: space-between;
-  gap: 7px;
-  color: rgba(242, 238, 228, 0.61);
-  border: 1px solid rgba(226, 184, 92, 0.2);
-  border-radius: 8px;
-  background: rgba(226, 184, 92, 0.055);
-  font-size: 0.58rem;
+  gap: 10px;
 }
 
-.market-equation b {
-  color: rgba(242, 238, 228, 0.34);
-  font-weight: 500;
+.market-history-head > span {
+  color: rgba(242, 238, 228, 0.54);
+  font-size: 0.48rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 }
 
-.market-equation strong {
-  color: var(--lime);
+.market-history-ranges {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.market-history-ranges i {
+  padding: 3px 4px;
+  color: rgba(242, 238, 228, 0.42);
+  border-radius: 4px;
+  font-size: 0.42rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.market-history-ranges .active {
+  color: #201b10;
+  background: #e2b85c;
+}
+
+.market-history svg {
+  display: block;
+  width: 100%;
+  height: 72px;
+  margin: 7px 0 5px;
+  overflow: visible;
+}
+
+.market-history-grid,
+.market-history-high,
+.market-history-low {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.market-history-grid {
+  stroke: rgba(242, 238, 228, 0.1);
+  stroke-width: 1;
+}
+
+.market-history-high,
+.market-history-low {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.market-history-high {
+  stroke: #e2b85c;
+}
+
+.market-history-low {
+  stroke: #86b6d2;
+  stroke-dasharray: 4 3;
+}
+
+.market-history-legend {
+  justify-content: flex-start;
+  color: rgba(242, 238, 228, 0.48);
+  font-size: 0.44rem;
+  font-weight: 720;
+}
+
+.market-history-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.market-history-legend span::before {
+  width: 13px;
+  height: 2px;
+  content: "";
+  background: #e2b85c;
+}
+
+.market-history-legend .market-history-legend-low::before {
+  height: 0;
+  border-top: 2px dashed #86b6d2;
+  background: transparent;
 }
 
 .market-board {

@@ -348,27 +348,47 @@
             <div
               class="project-visual market-visual"
               role="img"
-              aria-label="GE Ledger dashboard preview showing the tax-adjusted profit formula, matched 24-hour volume, and 63 automated tests"
+              aria-label="GE Ledger dashboard preview showing five standardized price-history ranges, average high and low trend lines, tax-adjusted opportunities, visible four-hour buy limits, and 84 automated tests passing"
             >
               <div class="market-topline">
                 <span><i></i> Live Wiki data</span>
                 <b>GE Ledger</b>
               </div>
               <div class="market-metrics" aria-hidden="true">
-                <div><small>Seller tax</small><strong>2%</strong><span>5M gp cap</span></div>
-                <div><small>Test suite</small><strong>63 / 63</strong><span>checks passing</span></div>
+                <div><small>History ranges</small><strong>5</strong><span>1D → 1Y</span></div>
+                <div><small>Published limits</small><strong>4H</strong><span>shown per item</span></div>
               </div>
-              <div class="market-equation" aria-hidden="true">
-                <span>Exit</span><b>−</b><span>Entry</span><b>−</b><span>Tax</span><b>=</b><strong>Net</strong>
+              <div class="market-history" aria-hidden="true">
+                <div class="market-history-head">
+                  <span>Average price history</span>
+                  <div class="market-history-ranges">
+                    <i>1D</i><i>1W</i><i class="active">1M</i><i>3M</i><i>1Y</i>
+                  </div>
+                </div>
+                <svg viewBox="0 0 320 82" preserveAspectRatio="none">
+                  <path class="market-history-grid" d="M0 16H320 M0 41H320 M0 66H320" />
+                  <path
+                    class="market-history-high"
+                    d="M0 53 C25 49 38 56 58 47 S92 36 112 42 S146 58 168 45 S202 29 222 35 S260 51 280 38 S305 25 320 28"
+                  />
+                  <path
+                    class="market-history-low"
+                    d="M0 66 C25 62 39 69 58 60 S92 49 112 54 S146 70 168 58 S201 42 222 47 S260 64 280 51 S305 38 320 41"
+                  />
+                </svg>
+                <div class="market-history-legend">
+                  <span class="market-history-legend-high">Average high</span>
+                  <span class="market-history-legend-low">Average low</span>
+                </div>
               </div>
               <div class="market-board" aria-hidden="true">
-                <div class="market-board-head"><span>Opportunity</span><span>Net / item</span><span>24h matched</span></div>
-                <div class="market-board-row"><span><i>A</i> High volume</span><strong>+2,840 gp</strong><b>18.4K</b></div>
-                <div class="market-board-row"><span><i>B</i> Low capital</span><strong>+94 gp</strong><b>42.1K</b></div>
-                <div class="market-board-row market-loss"><span><i>C</i> Thin margin</span><strong>−12 gp</strong><b>3.7K</b></div>
+                <div class="market-board-head"><span>Opportunity</span><span>Net / item</span><span>4h limit</span></div>
+                <div class="market-board-row"><span><i>A</i> High volume</span><strong>+2,840 gp</strong><b>70</b></div>
+                <div class="market-board-row"><span><i>B</i> Low capital</span><strong>+94 gp</strong><b>11K</b></div>
+                <div class="market-board-row market-loss"><span><i>C</i> Thin margin</span><strong>−12 gp</strong><b>8</b></div>
               </div>
               <div class="market-footer" aria-hidden="true">
-                <span>Freshness checked</span><span>Cache fallback</span>
+                <span>Tax adjusted</span><span>84 tests</span><span>Freshness checked</span>
               </div>
             </div>
             <div class="project-copy">
@@ -379,24 +399,26 @@
               <h3>GE Ledger</h3>
               <p class="project-lede">
                 An Old School RuneScape market dashboard that turns live Wiki/RuneLite price data
-                into tax-adjusted flip rankings, then matches the strongest current opportunity
-                to the cash stack a player has available.
+                into tax-adjusted flip rankings, plots high and low price history across five
+                standard ranges, and fits opportunities to a player's cash stack and visible
+                four-hour buy limits.
               </p>
               <div class="tag-list" aria-label="Technologies">
                 <span>React</span><span>TypeScript</span><span>REST APIs</span><span>Vitest</span
-                ><span>Vite</span>
+                ><span>SVG</span><span>Vite</span>
               </div>
               <details class="project-notes">
-                <summary>Calculation and safeguards</summary>
+                <summary>History, calculation and safeguards</summary>
                 <p>
                   Joins mapping, latest-price, and completed 24-hour feeds in parallel, then
-                  computes signed net profit, ROI, matched liquidity, and four-hour-limit
-                  projections. It applies the 2% per-item seller tax—including floor rounding,
-                  the 5M gp cap, and dated exemptions—flags stale prices, preserves losses, and
-                  caches the latest valid snapshot. A capital-aware planner estimates one-limit
-                  returns without presenting market-wide volume as guaranteed profit. Sixty-three
-                  automated tests across seven suites cover pricing, API, caching, filtering,
-                  sorting, planner math, and accessible UI behavior.
+                  loads per-item time series on demand for 1D, 1W, 1M, 3M, and 1Y views. Its
+                  responsive SVG chart compares average high and low prices, while published
+                  four-hour buy limits stay visible on the opportunity board and feed the
+                  capital-aware planner. The calculation applies the 2% per-item seller tax—including
+                  floor rounding, the 5M gp cap, and dated exemptions—flags stale prices, preserves
+                  losses, and avoids presenting market-wide volume as guaranteed profit. Eighty-four
+                  automated tests across nine test files cover pricing, API and history handling,
+                  caching, filtering, planner math, chart geometry, and accessible UI behavior.
                 </p>
               </details>
               <div class="project-links">
