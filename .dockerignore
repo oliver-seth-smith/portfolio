@@ -1,0 +1,6 @@
+.git
+.agents
+.codex
+README.md
+*.log
+compose.yaml

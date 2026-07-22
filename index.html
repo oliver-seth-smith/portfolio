@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Oliver Seth-Smith, a software engineer focused on reliable systems, automation, infrastructure, and thoughtful developer experiences."
+    />
+    <meta name="theme-color" content="#18221c" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Oliver Seth-Smith — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software, systems, and automation built to hold up in the real world."
+    />
+    <title>Oliver Seth-Smith — Software Engineer</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Oliver Seth-Smith",
+        "jobTitle": "Software Engineer",
+        "email": "mailto:osethsmith@gmail.com",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "California State University, San Bernardino"
+        },
+        "sameAs": [
+          "https://github.com/oliver-seth-smith",
+          "https://www.linkedin.com/in/oliver-seth-smith"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Oliver Seth-Smith, home">
+        <span class="wordmark-mark">OS</span>
+        <span>Oliver Seth-Smith</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        data-menu-toggle
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="mailto:osethsmith@gmail.com">Let’s talk</a>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Software engineer · Southern California</p>
+          <h1 id="hero-title">
+            I build software that behaves well
+            <em>after it ships.</em>
+          </h1>
+          <p class="hero-intro">
+            I’m Oliver—a computer science graduate who turns ambiguous problems into
+            dependable systems, from observable Kubernetes workloads to practical event
+            operations and data products.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">
+              Explore my work
+              <svg aria-hidden="true" viewBox="0 0 20 20">
+                <path d="M4 10h11M11 5l5 5-5 5" />
+              </svg>
+            </a>
+            <a
+              class="button button-quiet"
+              href="assets/oliver-seth-smith-resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View résumé <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/oliver-seth-smith" target="_blank" rel="noreferrer">
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/oliver-seth-smith"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-portrait reveal" data-delay="1">
+          <div class="portrait-frame">
+            <img
+              src="assets/oliver-seth-smith.png"
+              alt="Oliver Seth-Smith wearing a dark suit"
+              width="1221"
+              height="896"
+              fetchpriority="high"
+            />
+            <div class="portrait-label" aria-hidden="true">
+              <span>Engineer</span>
+              <span>Builder</span>
+              <span>Operator</span>
+            </div>
+          </div>
+          <div class="availability-card">
+            <span class="availability-dot" aria-hidden="true"></span>
+            <p><strong>Open to new opportunities</strong><br />Software · Platform · DevOps</p>
+          </div>
+          <span class="portrait-index" aria-hidden="true">01 / 05</span>
+        </div>
+
+        <div class="proof-strip reveal" data-delay="2" aria-label="Career highlights">
+          <div>
+            <strong>44</strong>
+            <span>automated checks passing</span>
+          </div>
+          <div>
+            <strong>3.93</strong>
+            <span>CSUSB GPA</span>
+          </div>
+          <div>
+            <strong>20+</strong>
+            <span>front-end issues resolved</span>
+          </div>
+          <p>Proof over promises.</p>
+        </div>
+      </section>
+
+      <section class="work-section section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">Selected work · 2024—2026</p>
+            <h2 id="work-title">Built with the messy parts included.</h2>
+          </div>
+          <p>
+            Five source-backed case studies spanning infrastructure, event operations, data
+            products, market analysis, and machine learning—plus two builds documented in my
+            current résumé.
+          </p>
+        </div>
+
+        <div class="filter-row reveal" role="group" aria-label="Filter projects">
+          <button class="filter-button is-active" type="button" data-filter="all">All work</button>
+          <button class="filter-button" type="button" data-filter="systems">Systems</button>
+          <button class="filter-button" type="button" data-filter="data">Data</button>
+          <span class="sr-only" aria-live="polite" data-filter-status></span>
+        </div>
+
+        <div class="projects-grid" data-project-grid>
+          <article class="project-card project-featured has-link reveal" data-category="systems">
+            <div class="project-copy">
+              <div class="project-meta">
+                <span>01</span>
+                <span>Platform engineering</span>
+                <span class="project-status"><i></i> Public repository</span>
+              </div>
+              <h3>OpsReady</h3>
+              <p class="project-lede">
+                A production-readiness lab that proves a small service can be built, observed,
+                secured, deployed, broken, and recovered with intention.
+              </p>
+              <ul class="project-impact" aria-label="Project outcomes">
+                <li><strong>44</strong><span>unit and HTTP tests</span></li>
+                <li><strong>3 paths</strong><span>native, Compose, Kubernetes</span></li>
+                <li><strong>0</strong><span>runtime dependencies</span></li>
+              </ul>
+              <div class="tag-list" aria-label="Technologies">
+                <span>Python</span><span>Kubernetes</span><span>Docker</span><span>Prometheus</span
+                ><span>GitHub Actions</span>
+              </div>
+              <details class="project-notes">
+                <summary>Engineering details</summary>
+                <p>
+                  Includes hardened containers, Kustomize overlays, SLO-backed alerts, a
+                  provisioned Grafana dashboard, failure-injection runbooks, SBOM creation, and
+                  a keylessly signed release workflow.
+                </p>
+              </details>
+              <a
+                class="text-link"
+                href="https://github.com/oliver-seth-smith/opsready"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Explore the repository <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div
+              class="project-visual ops-visual"
+              role="img"
+              aria-label="OpsReady status illustration showing a ready service, 44 of 44 tests passing, and a request-to-API-to-metrics pipeline"
+            >
+              <div class="terminal-bar"><span></span><span></span><span></span><b>opsready / status</b></div>
+              <div class="ops-status-row">
+                <div><span>Service state</span><strong><i></i> Ready</strong></div>
+                <div><span>Test suite</span><strong>44 / 44</strong></div>
+              </div>
+              <div class="signal-chart" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span
+                ><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="ops-pipeline" aria-hidden="true">
+                <span>Request</span><b>→</b><span>API</span><b>→</b><span>Metrics</span>
+              </div>
+              <div class="ops-stack">
+                <span>Prometheus</span><span>Grafana</span><span>Alertmanager</span
+                ><span>Kubernetes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-wide event-card reveal" data-category="systems">
+            <div class="project-copy">
+              <div class="project-meta">
+                <span>02</span><span>Event operations backend</span
+                ><span class="project-stage">Work in progress</span>
+              </div>
+              <h3>EventReady</h3>
+              <p class="project-lede">
+                A role-aware backend for equipment readiness and technical incident management,
+                turning real event-support workflows into an auditable API.
+              </p>
+              <div class="tag-list">
+                <span>FastAPI</span><span>SQLAlchemy</span><span>SQLite / PostgreSQL</span
+                ><span>Prometheus</span>
+              </div>
+              <details class="project-notes">
+                <summary>Backend foundation</summary>
+                <p>
+                  Implements secure session cookies, role-based access, asset assignment and
+                  check-in, readiness checklists, incident resolution rules, audit trails,
+                  endpoint reports, health probes, and HTTP metrics. Nine integration tests and
+                  Ruff checks pass in an isolated environment; the user interface is still in
+                  progress.
+                </p>
+              </details>
+              <p class="project-footnote">Private working project · backend verified locally</p>
+            </div>
+            <div
+              class="project-visual event-visual"
+              role="img"
+              aria-label="EventReady interface concept showing asset readiness, event checklists, incident triage, and audit history"
+            >
+              <div class="event-topline">
+                <span><i></i> EventReady</span><b>Operations overview</b>
+              </div>
+              <div class="event-panels">
+                <div><small>ASSETS</small><strong>Assigned</strong><span>Check-out tracked</span></div>
+                <div><small>EVENTS</small><strong>Ready</strong><span>Checklist enforced</span></div>
+                <div><small>INCIDENTS</small><strong>Triaged</strong><span>Resolution required</span></div>
+              </div>
+              <div class="event-activity">
+                <p><span class="event-severity high">High</span><strong>Connectivity issue</strong><small>Investigating</small></p>
+                <p><span class="event-severity low">Audit</span><strong>Equipment checked in</strong><small>Recorded</small></p>
+                <p><span class="event-severity ready">Ready</span><strong>Pre-event checklist</strong><small>Complete</small></p>
+              </div>
+              <div class="event-footer"><span>Role-aware</span><span>Auditable</span><span>Observable</span></div>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-wide deathle-card has-link reveal"
+            id="deathle"
+            data-category="data"
+            data-delay="1"
+          >
+            <div class="project-copy">
+              <div class="project-meta">
+                <span>03</span><span>Daily data game</span
+                ><span class="project-status"><i></i> Live product</span>
+              </div>
+              <h3>Deathle</h3>
+              <p class="project-lede">
+                A daily historical-tragedy ranking game that asks players to order five events by
+                death toll, then turns each attempt into exact-position feedback.
+              </p>
+              <div class="tag-list" aria-label="Technologies">
+                <span>JavaScript</span><span>Wikipedia API</span><span>Data validation</span
+                ><span>AWS Amplify</span><span>Accessible drag and drop</span>
+              </div>
+              <details class="project-notes">
+                <summary>Product and data engineering</summary>
+                <p>
+                  Ships a checked-in, validated catalog of 1,513 Wikipedia-sourced events and a
+                  deterministic Pacific-time puzzle shared by every player. The dependency-free
+                  client supports pointer and keyboard reordering, persistent game state,
+                  duplicate-death avoidance, and spoiler-free result sharing; the data pipeline
+                  discovers structured death-toll tables while rejecting duplicates, generic
+                  topics, and misaligned records.
+                </p>
+              </details>
+              <a class="text-link" href="https://deathle.com" target="_blank" rel="noreferrer">
+                Play Deathle <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div
+              class="project-visual deathle-visual"
+              role="img"
+              aria-label="Deathle game concept showing five historical tragedies ready to be ranked by death toll"
+            >
+              <div class="deathle-topline">
+                <span><i></i> Daily challenge</span><b>deathle.com</b>
+              </div>
+              <div class="deathle-prompt">
+                <small>Rank the tragedies</small>
+                <strong>Most deaths → fewest</strong>
+              </div>
+              <div class="deathle-board" aria-hidden="true">
+                <div><b>1</b><span>Historical event</span><small>Hidden</small><i>↕</i></div>
+                <div><b>2</b><span>Historical event</span><small>Hidden</small><i>↕</i></div>
+                <div><b>3</b><span>Historical event</span><small>Hidden</small><i>↕</i></div>
+                <div><b>4</b><span>Historical event</span><small>Hidden</small><i>↕</i></div>
+                <div><b>5</b><span>Historical event</span><small>Hidden</small><i>↕</i></div>
+              </div>
+              <div class="deathle-footer">
+                <span>1,513 sourced events</span><span>4 guesses</span><span>One puzzle daily</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card market-card has-link reveal"
+            id="ge-ledger"
+            data-category="data"
+            data-delay="1"
+          >
+            <div
+              class="project-visual market-visual"
+              role="img"
+              aria-label="GE Ledger dashboard preview showing the tax-adjusted profit formula, matched 24-hour volume, and 63 automated tests"
+            >
+              <div class="market-topline">
+                <span><i></i> Live Wiki data</span>
+                <b>GE Ledger</b>
+              </div>
+              <div class="market-metrics" aria-hidden="true">
+                <div><small>Seller tax</small><strong>2%</strong><span>5M gp cap</span></div>
+                <div><small>Test suite</small><strong>63 / 63</strong><span>checks passing</span></div>
+              </div>
+              <div class="market-equation" aria-hidden="true">
+                <span>Exit</span><b>−</b><span>Entry</span><b>−</b><span>Tax</span><b>=</b><strong>Net</strong>
+              </div>
+              <div class="market-board" aria-hidden="true">
+                <div class="market-board-head"><span>Opportunity</span><span>Net / item</span><span>24h matched</span></div>
+                <div class="market-board-row"><span><i>A</i> High volume</span><strong>+2,840 gp</strong><b>18.4K</b></div>
+                <div class="market-board-row"><span><i>B</i> Low capital</span><strong>+94 gp</strong><b>42.1K</b></div>
+                <div class="market-board-row market-loss"><span><i>C</i> Thin margin</span><strong>−12 gp</strong><b>3.7K</b></div>
+              </div>
+              <div class="market-footer" aria-hidden="true">
+                <span>Freshness checked</span><span>Cache fallback</span>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-meta">
+                <span>04</span><span>Market data product</span
+                ><span class="project-status"><i></i> Live product</span>
+              </div>
+              <h3>GE Ledger</h3>
+              <p class="project-lede">
+                An Old School RuneScape market dashboard that turns live Wiki/RuneLite price data
+                into tax-adjusted flip rankings, then matches the strongest current opportunity
+                to the cash stack a player has available.
+              </p>
+              <div class="tag-list" aria-label="Technologies">
+                <span>React</span><span>TypeScript</span><span>REST APIs</span><span>Vitest</span
+                ><span>Vite</span>
+              </div>
+              <details class="project-notes">
+                <summary>Calculation and safeguards</summary>
+                <p>
+                  Joins mapping, latest-price, and completed 24-hour feeds in parallel, then
+                  computes signed net profit, ROI, matched liquidity, and four-hour-limit
+                  projections. It applies the 2% per-item seller tax—including floor rounding,
+                  the 5M gp cap, and dated exemptions—flags stale prices, preserves losses, and
+                  caches the latest valid snapshot. A capital-aware planner estimates one-limit
+                  returns without presenting market-wide volume as guaranteed profit. Sixty-three
+                  automated tests across seven suites cover pricing, API, caching, filtering,
+                  sorting, planner math, and accessible UI behavior.
+                </p>
+              </details>
+              <div class="project-links">
+                <a class="button button-primary" href="/osrs-market-watch/">
+                  Open live dashboard
+                  <svg aria-hidden="true" viewBox="0 0 20 20">
+                    <path d="M4 10h11M11 5l5 5-5 5" />
+                  </svg>
+                </a>
+                <a
+                  class="text-link"
+                  href="https://github.com/oliver-seth-smith/osrs-market-watch"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View source <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="data" data-delay="2">
+            <div
+              class="project-visual data-visual"
+              role="img"
+              aria-label="Spotify model comparison: regression accuracy 87.3 percent, KNN accuracy 76.6 percent, with playlist presence identified as the strongest measured relationship with streams"
+            >
+              <p class="visual-label">Model accuracy</p>
+              <div class="accuracy-row regression-score">
+                <span>Regression</span>
+                <div><i></i></div>
+                <strong>87.3%</strong>
+              </div>
+              <div class="accuracy-row knn-score">
+                <span>KNN</span>
+                <div><i></i></div>
+                <strong>76.6%</strong>
+              </div>
+              <p class="data-finding">
+                <span>Key signal</span>
+                Playlist presence had the strongest measured relationship with streams.
+              </p>
+            </div>
+            <div class="project-copy">
+              <div class="project-meta"><span>05</span><span>Machine learning · Team project</span></div>
+              <h3>Spotify Stream Analysis</h3>
+              <p class="project-lede">
+                An R-based comparison of regression and KNN models across 900+ popular tracks to
+                identify the numerical attributes most associated with streaming performance.
+              </p>
+              <div class="tag-list"><span>R</span><span>Regression</span><span>KNN</span><span>Data analysis</span></div>
+              <details class="project-notes">
+                <summary>What the analysis found</summary>
+                <p>
+                  The regression model outperformed KNN, identifying artist count, Spotify
+                  playlist presence, and chart presence as the strongest predictors in the
+                  supplied 2023 dataset. The report also documents model assumptions and dataset
+                  limitations.
+                </p>
+              </details>
+              <p class="project-footnote">Academic team report · available on request</p>
+            </div>
+          </article>
+
+        </div>
+
+        <aside class="additional-builds reveal" aria-labelledby="additional-title">
+          <div class="additional-heading">
+            <p class="section-kicker">Additional builds</p>
+            <h3 id="additional-title">Infrastructure at home. Product delivery with a team.</h3>
+          </div>
+          <article>
+            <div class="additional-index">A / 01</div>
+            <div>
+              <h4>B.O.S.C.O. Homelab</h4>
+              <p>
+                A three-server self-hosted environment for learning infrastructure operations in
+                practice: Proxmox virtualization, Terraform provisioning, Ansible configuration,
+                Docker services, CI/CD, storage, and networking.
+              </p>
+              <div class="tag-list"><span>Proxmox</span><span>Terraform</span><span>Ansible</span><span>Docker</span></div>
+            </div>
+            <span class="additional-date">2026—Present</span>
+          </article>
+          <article>
+            <div class="additional-index">A / 02</div>
+            <div>
+              <h4>EzCommerce</h4>
+              <p>
+                A full-stack e-commerce platform delivered with a six-developer Agile team. I led
+                the Scrum workflow and built responsive interface components and REST API
+                integrations across Node.js, Firebase, JavaScript, HTML, and CSS.
+              </p>
+              <div class="tag-list"><span>Node.js</span><span>Firebase</span><span>REST APIs</span><span>Agile</span></div>
+            </div>
+            <span class="additional-date">2024</span>
+          </article>
+        </aside>
+      </section>
+
+      <section class="experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-shell experience-inner">
+          <div class="experience-heading reveal">
+            <p class="section-kicker">Experience</p>
+            <h2 id="experience-title">Software is only useful when people can depend on it.</h2>
+            <p>
+              My experience crosses application development and hands-on IT operations—the
+              combination that keeps me thinking about the user, the failure path, and the handoff.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Jan—Aug 2025</div>
+              <div class="timeline-copy">
+                <div class="role-line">
+                  <h3>Software Engineering Intern</h3>
+                  <span>Nanoinfo · Remote</span>
+                </div>
+                <p>
+                  Resolved more than 20 front-end issues across JavaScript, HTML, and CSS;
+                  upgraded MySQL 5.7 to 8.0, restored database connectivity, and improved SQL
+                  queries for integrity and performance.
+                </p>
+                <div class="tag-list"><span>JavaScript</span><span>MySQL</span><span>Linux</span></div>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Oct 2020—Present</div>
+              <div class="timeline-copy">
+                <div class="role-line">
+                  <h3>IT Support Specialist</h3>
+                  <span>Fantasy Events · San Dimas, CA</span>
+                </div>
+                <p>
+                  Keep live events running through on-site endpoint, hardware, software, and
+                  network support. Helped move the business to a hybrid event model using
+                  Microsoft 365 and Zoom when continuity mattered most.
+                </p>
+                <div class="tag-list"><span>Windows</span><span>Networking</span><span>Microsoft 365</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section section-shell" id="about" aria-labelledby="about-title">
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="section-kicker">How I work</p>
+            <h2 id="about-title">Curious enough to dig in. Practical enough to ship.</h2>
+            <p class="about-lede">
+              I like the point where software meets reality: unclear requirements, constrained
+              environments, failure modes, and the people who need the system to make sense.
+            </p>
+            <p>
+              That perspective comes from building full-stack applications, maintaining live
+              event technology, automating infrastructure in a homelab, and studying both
+              computer science and data science. I document decisions, test the unhappy paths,
+              and leave the next person a system they can understand.
+            </p>
+            <a
+              class="text-link"
+              href="assets/oliver-seth-smith-resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              >Read my full résumé <span aria-hidden="true">↗</span></a
+            >
+          </div>
+
+          <div class="capability-board reveal" data-delay="1">
+            <div class="capability-title">
+              <span>Working set</span>
+              <span>2026</span>
+            </div>
+            <div class="capability-group">
+              <strong>Build</strong>
+              <p>Python · JavaScript · SQL · Node.js · REST APIs</p>
+            </div>
+            <div class="capability-group">
+              <strong>Operate</strong>
+              <p>Linux · Docker · Kubernetes · Prometheus · Grafana</p>
+            </div>
+            <div class="capability-group">
+              <strong>Automate</strong>
+              <p>Terraform · Ansible · Bash · CI/CD · GitHub Actions</p>
+            </div>
+            <div class="education-stamp">
+              <span>BS</span>
+              <p>
+                <strong>Computer Science</strong><br />
+                Data Science minor · 3.93 CSUSB GPA<br />
+                CSU San Bernardino · 2025
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact-title">
+        <div class="contact-orbit orbit-one" aria-hidden="true"></div>
+        <div class="contact-orbit orbit-two" aria-hidden="true"></div>
+        <div class="contact-inner reveal">
+          <p class="section-kicker">One good conversation can start a lot.</p>
+          <h2 id="contact-title">Have a problem worth building for?</h2>
+          <a class="contact-email" href="mailto:osethsmith@gmail.com">
+            osethsmith@gmail.com <span aria-hidden="true">↗</span>
+          </a>
+          <div class="contact-links">
+            <a href="https://github.com/oliver-seth-smith" target="_blank" rel="noreferrer">GitHub</a>
+            <a
+              href="https://www.linkedin.com/in/oliver-seth-smith"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn</a
+            >
+            <a href="assets/oliver-seth-smith-resume.pdf" target="_blank" rel="noreferrer">Résumé</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Oliver Seth-Smith</p>
+      <p>Designed with intent. Built with plain HTML, CSS &amp; JavaScript.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

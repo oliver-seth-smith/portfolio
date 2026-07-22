@@ -1,0 +1,14 @@
+services:
+  portfolio:
+    build: .
+    image: oliver-seth-smith-portfolio:latest
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:8080"
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,noexec,nosuid
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
